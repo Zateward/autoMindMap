@@ -1,0 +1,55 @@
+digraph Importancia_Imagen {
+    label="En resumen, la ingeniería de la imagen pública y profesional es un proceso fundamental en un mundo globalizado y altamente competitivo. Implica la gestión de múltiples elementos, desde la comunicación verbal y no verbal hasta la apariencia y el manejo de crisis, con el objetivo de proyectar una imagen sólida y positiva."
+
+    // Nodo raíz
+    "Mapa Mental de la Importancia de la Imagen Pública" [shape=box, label="Noguera Trejo Luis Eduardo --- Tarea: La importancia de la Imagen\n\n\nMapa Mental de la Importancia de la Imagen Pública\n\nEste mapa mental proporciona una descripción general de la importancia de la imagen pública."];
+
+    // Subtemas
+    "Mapa Mental de la Importancia de la Imagen Pública" -> "Globalización y Competencia" [label="Tema principal"];
+
+    // Subtemas
+    "Globalización y Competencia" -> "Importancia de la Imagen" [label="Relaciones"];
+    "Globalización y Competencia" -> "Ejemplos de Políticas" [label="Ejemplos"];
+    "Globalización y Competencia" -> "Ejemplos de Negocios" [label="Ejemplos"];
+
+    "Importancia de la Imagen" -> "Proceso de Ingeniería en Imagen Pública" [label="Enfoque"];
+    "Importancia de la Imagen" -> "Elementos de la Imagen" [label="Componentes"];
+
+    "Ejemplos de Políticas" -> "Proceso de Ingeniería en Imagen Pública" [label="Ejemplo"];
+    "Ejemplos de Políticas" -> "Elementos de la Imagen" [label="Ejemplo"];
+
+    "Ejemplos de Negocios" -> "Proceso de Ingeniería en Imagen Pública" [label="Ejemplo"];
+    "Ejemplos de Negocios" -> "Elementos de la Imagen" [label="Ejemplo"];
+
+    "Proceso de Ingeniería en Imagen Pública" -> "Elementos de la Imagen" [label="Relaciones"];
+
+    // Subtemas adicionales
+    "Proceso de Ingeniería en Imagen Pública" -> "Lenguaje Corporal" [label="Componente"];
+    "Proceso de Ingeniería en Imagen Pública" -> "Imagen Profesional" [label="Importancia"];
+
+    "Imagen Profesional" -> "Protocolo" [label="Componente"];
+    "Imagen Profesional" -> "Manejo de Crisis" [label="Componente"];
+
+    // Subtemas adicionales
+    "Lenguaje Corporal" -> "Contacto Visual" [label="Componente"];
+    "Lenguaje Corporal" -> "Conducta Táctil" [label="Componente"];
+
+    // Evaluación de la Imagen Profesional
+    "Imagen Profesional" -> "Evaluación de la Imagen Profesional" [label="Mecanismo de Evaluación"];
+
+    // Atributos de los nodos
+    "Mapa Mental de la Importancia de la Imagen Pública" [fontsize=16];
+    "Globalización y Competencia" [fontsize=14];
+    "Importancia de la Imagen" [fontsize=14];
+    "Proceso de Ingeniería en Imagen Pública" [fontsize=14];
+    "Elementos de la Imagen" [fontsize=14];
+    "Ejemplos de Políticas" [fontsize=14];
+    "Ejemplos de Negocios" [fontsize=14];
+    "Lenguaje Corporal" [fontsize=14];
+    "Imagen Profesional" [fontsize=14];
+    "Protocolo" [fontsize=14];
+    "Manejo de Crisis" [fontsize=14];
+    "Contacto Visual" [fontsize=14];
+    "Conducta Táctil" [fontsize=14];
+    "Evaluación de la Imagen Profesional" [fontsize=14];
+}
