@@ -1,0 +1,37 @@
+digraph G {
+  node [shape=box];
+
+  // Título
+  "Oferta Inesperada" [shape=ellipse, label="Oferta Inesperada"]
+
+  // Sección 1
+  subgraph cluster_1 {
+    label="Inicio"
+    "Anuncio en periódico" [label="Anuncio de trabajo en periódico"]
+    "Interés de Felipe" [label="Interés de Felipe Montero"]
+    "Dirección misteriosa" [label="Dirección misteriosa: Donceles 815"]
+  }
+
+  // Sección 2
+  subgraph cluster_2 {
+    label="Encuentro con la Anciana"
+    "Anciana" [label="Anciana ofrece trabajo"]
+    "Tarea sobre papeles del General" [label="Tarea sobre papeles del General Llorente"]
+    "Condiciones de la anciana" [label="Condiciones de la anciana"]
+  }
+
+  // Sección 3
+  subgraph cluster_3 {
+    label="Introducción de Aura"
+    "Introducción de Aura" [label="Introducción de Aura"]
+    "Aceptación de la oferta" [label="Aceptación de la oferta por Felipe"]
+  }
+
+  // Conexiones
+  "Oferta Inesperada" -> "Inicio"
+  "Inicio" -> "Anuncio en periódico" -> "Interés de Felipe" -> "Dirección misteriosa"
+  "Oferta Inesperada" -> "Encuentro con la Anciana"
+  "Encuentro con la Anciana" -> "Anciana" -> "Tarea sobre papeles del General" -> "Condiciones de la anciana"
+  "Oferta Inesperada" -> "Introducción de Aura"
+  "Introducción de Aura" -> "Introducción de Aura" -> "Aceptación de la oferta"
+}

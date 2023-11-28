@@ -4,8 +4,8 @@ import pydot
 
 file = input("Ingresa el nombre de tu archivo: ")
 
-dotFile = f"/home/zateward/Documents/Python/autoMindMap/src/dotFiles/{file}.dot" # where the .dot file is in.
-downloadFile = os.path.expanduser("~/Downloads/mapaMental.svg") # where the .dot files will be downloaded
+dotFile = f"/home/zatedev/Documents/python/autoMindMap/src/dotFiles/{file}.dot" # where the .dot file is in.
+downloadFile = os.path.expanduser("/mnt/c/Users/Zateward/Documents/School/mapaMental2.svg") # where the .dot files will be downloaded
 
 graph = pydot.graph_from_dot_file(dotFile)
 
@@ -21,4 +21,3 @@ if graph:
     print(f"Archivo SVG guardado en {downloadFile}")
 else:
     print("No se pudo cargar el archivo .dot")
-

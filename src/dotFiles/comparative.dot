@@ -1,0 +1,35 @@
+digraph G {
+    rankdir=TB;  // Cambia la dirección del gráfico a arriba-abajo
+
+    node [shape=plaintext, fontsize=12];
+
+    // Encabezado
+    header [label="Comparación de Formas del Discurso"];
+
+    // Categorías
+    descriptiva [label="Forma Descriptiva"];
+    argumentativa [label="Forma Argumentativa"];
+
+    // Características de la Forma Descriptiva
+    descriptiva -> "Características generales" [label="Presenta características generales de un tema"];
+    descriptiva -> "Escasa profundización" [label="No se adentra en explicaciones detalladas"];
+    descriptiva -> "No busca convencer" [label="No tiene un objetivo de persuasión"];
+
+    // Características de la Forma Argumentativa
+    argumentativa -> "Opiniones y juicios" [label="Expresa opiniones y juicios personales"];
+    argumentativa -> "Intenta persuadir" [label="Busca convencer al lector o espectador"];
+    argumentativa -> "Uso de expresiones persuasivas" [label="Emplea expresiones que indican argumentación, como 'yo creo' o 'desde mi punto de vista'"];
+
+    // Conclusión
+    conclusion [label="Conclusión"];
+    conclusion -> "Importancia de la comprensión" [label="Comprender las formas del discurso mejora la comprensión de textos"];
+    conclusion -> "Más ejercicios en futuros videos" [label="Se anticipan más ejercicios sobre el tema en futuros videos"];
+
+    // Relaciones
+    header -> descriptiva [style=invis];
+    header -> argumentativa [style=invis];
+    descriptiva -> argumentativa [constraint=false];
+    argumentativa -> descriptiva [constraint=false];
+    descriptiva -> conclusion;
+    argumentativa -> conclusion;
+}
